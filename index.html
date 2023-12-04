@@ -1,67 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br" oncontextmenu="return false">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feliz Aniversário!</title>
-  <link rel="icon" type="image/svg+xml" href="src/typescript.svg" />
+  <link rel="icon" type="image/svg+xml" href="public/svg/typescript.svg"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    body {
-      background-color: #4f92d4;
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      color: #dc3545;
-      font-size: 36px;
-      margin-bottom: 20px;
-      font-style: italic;
-      font-weight: bold;
-    }
-
-    p {
-      color: #333;
-      font-size: 18px;
-      margin-bottom: 10px;
-      font-weight: bolder;
-    }
-
-    .btn {
-      background-color: #dc3545;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #c82333;
-    }
-  </style>
+  <link rel="stylesheet" href="src/css/page.css">
 </head>
-
 <body>
   <div class="container">
-    <h1>Feliz Aniversário!</h1>
+    <h1 class="card-title"></h1>
     <p>Parabéns pelo seu dia especial!</p>
-    <p>Espero que seu aniversário seja repleto de alegria, amor e felicidade.</p>
-    <p>Aproveite cada momento e celebre em grande estilo!</p>
-    <a href="https://r.mtdv.me/aniversario-matheus" class="btn" target="_blank">Saiba mais</a>
-    <a href="/test.html" class="btn" target="_blank">Saiba mais</a>
+    <p>Frase para colocar no parágrafo</p>
+    <p>Blablabla</p>
+    <!-- <a href="https://r.mtdv.me/aniversario-matheus" class="btn" target="_blank">Saiba mais</a> -->
+    <a href="#" class="btn" id="confetti-button">🎊</a>
+    <a href="/page.html" class="btn" target="_blank">Saiba mais</a>
   </div>
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
-  <script src="src/app.js"></script>
+  <script src="src/page.ts" type="module"></script>
+  <script src="src/js/greetings.js"></script>
 </body>
-
 </html>
