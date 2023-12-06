@@ -6,5 +6,5 @@ const typewriter = new TypeWriter(title, { loop: false, typingSpeed: 100 })
 
 typewriter
   .pauseFor(2300)
-  .typeString("Feliz Aniversário!")
+  .typeString("🍰Feliz Aniversário!🎂")
   .start()
