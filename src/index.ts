@@ -15,10 +15,14 @@ export function setupCounter(element: HTMLButtonElement): void {
 
     if (counter >= 10) {
       const link = defaultUrl + links[Math.floor(Math.random() * links.length)]
-
-      location.href = link
+      // location.href = link
 
       element.innerHTML = "Preparando a última surpresa..."
+
+      open(link, 'window', 'toolbar=no, menubar=no, resizable=no, width=500, height=500, top=100, left=100')
+      
+      //   'width=795, height=590, top=100, left=699, scrollbars = no, status = no, toolbar = no, location = no, menubar = no, resizable = no,fullscreen = no'
+      //   'width=660, height=510, scrollbars=yes'
     }
   })
 
