@@ -43,24 +43,3 @@ window.onload = () => {
     console.error(err)
   }
 }
-
-// let context = new AudioContext()
-
-// console.log(context.state)
-
-// context.onstatechange = () => {
-//   console.log(context.state)
-
-//   if (context.state === 'running') {
-//     fetch('../../audio/birthday.wav')
-//       .then(response => response.arrayBuffer())
-//       .then(arrayBuffer => context.decodeAudioData(arrayBuffer))
-//       .then(audioBuffer => {
-//         let source = context.createBufferSource()
-//         source.buffer = audioBuffer;
-//         source.connect(context.destination)
-//         source.start()
-//       })
-//       .catch(e => console.error(e))
-//   }
-// }
