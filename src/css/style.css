@@ -23,15 +23,15 @@ span .card-title {
   color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 36px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
   font-style: italic;
 }
 
 p {
-  color: #333;
-  font-size: 18px;
+  color: #f04343;
+  font-size: 15px;
   margin-bottom: 10px;
   font-weight: bolder;
 }
@@ -48,6 +48,14 @@ p {
 
 .btn:hover {
   background-color: #c82333;
+}
+
+#confetti-button {
+  background-color: #00aeff;
+}
+
+#confetti-button:hover {
+  background-color: #007bff;
 }
 
 img {
