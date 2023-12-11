@@ -7,20 +7,24 @@ export function setupCounter(element: HTMLButtonElement): void {
 
   const setCounter = (count: number): void => {
     counter = count
-    element.innerHTML = `count is ${counter}`
+    element.innerHTML = `
+    Clique aqui e receba uma surpresa aleatória!<br>
+    <b>Número de cliques: ${counter}</b>
+    `
   }
 
   element.addEventListener('click', () => {
     setCounter(counter + 1)
 
-    if (counter >= 10) {
+    if (counter >= 5) {
       const link = defaultUrl + links[Math.floor(Math.random() * links.length)]
-      // location.href = link
 
       element.innerHTML = "Preparando a última surpresa..."
 
-      open(link, 'window', 'toolbar=no, menubar=no, resizable=no, width=500, height=500, top=100, left=100')
-      
+      setTimeout(() => {
+        open(link, 'window', 'toolbar=no, menubar=no, resizable=no, width=500, height=500, top=100, left=100')
+      }, 2000)
+
       //   'width=795, height=590, top=100, left=699, scrollbars = no, status = no, toolbar = no, location = no, menubar = no, resizable = no,fullscreen = no'
       //   'width=660, height=510, scrollbars=yes'
     }
