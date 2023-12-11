@@ -10,28 +10,11 @@ const createNotification = () => {
   // }
 
   if (Notification && Notification.permission !== "denied") {
-    // Notification
-    //   .requestPermission((status) => {
-    //     const notify = new Notification("Este é o título da notificação", {
-    //       body: "Este é o corpo da notificação",
-    //       icon: "../../public/svg/vite.svg",
-    //       vibrate: [200, 100, 200, 100, 200, 100, 200],
-    //     })
-
-    //     notify.onclick = (event) => {
-    //       event.preventDefault()
-
-    //       open(document.location.href)
-
-    //       notify.close()
-    //     }
-    //   })
-
     if (Notification.permission !== "denied") {
       Notification.requestPermission().then(permission => {
         if (permission === 'granted') {
-          const notify = new Notification("Este é o título da notificação", {
-            body: "Este é o corpo da notificação",
+          const notify = new Notification("PARABÉNS🎊", {
+            body: "Espero que tenha gostado da surpresa!",
             icon: "../../public/svg/vite.svg",
             vibrate: [200, 100, 200, 100, 200, 100, 200],
           })
